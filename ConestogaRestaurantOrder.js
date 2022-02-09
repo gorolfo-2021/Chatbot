@@ -505,7 +505,7 @@ module.exports = class RestaurantOrder extends Order{
 
         let d = new Date(); 
         d.setMinutes(d.getMinutes() + 20);
-        aReturn.push(`Your payment of $${this.sNumber.bold()} is complete. Your order will be delivered at the following shipping address \n ${shippingAddress.bold()} \n at ${d.toTimeString()}`);
+        aReturn.push(`Your payment of $${this.nOrder.bold()} is complete. Your order will be delivered at the following shipping address \n ${shippingAddress.bold()} \n at ${d.toTimeString()}`);
         break; 
     }
     return aReturn;
