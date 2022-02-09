@@ -477,6 +477,8 @@ module.exports = class RestaurantOrder extends Order{
             this.sTax = this.sPrice * tax;
             this.sTotalAmount = this.sPrice + this.sTax;
             this.nOrder = this.sTotalAmount.toFixed(2);
+            // Reset The Order Counter 
+            orderCount = 0;
             aReturn.push(`The total amount of your order is $${this.sTotalAmount.toFixed(2).bold()}. Please pay the amount by clicking the link below: \n ${this.sUrl}/payment/${this.sNumber}/`);
             break;
           case 'no':
