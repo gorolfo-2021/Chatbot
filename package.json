@@ -1,0 +1,42 @@
+{
+  "name": "chatbot_ordering",
+  "version": "1.0.0",
+  "description": "This is a chatbot ordering with paypal sandbox using JS (ES6) with node 9.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorolfo/chatbot_ordering.git"
+  },
+  "keywords": [
+    "chatbot",
+    "node",
+    "es6",
+    "problem",
+    "solving"
+  ],
+  "author": "Glenn Orolfo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorolfo/chatbot_ordering/issues"
+  },
+  "homepage": "https://github.com/gorolfo/chatbot_ordering#readme",
+  "dependencies": {
+    "engine.io": "*",
+    "express": "*",
+    "socket.io": "*",
+    "twilio": "*",
+    "underscore": "*"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  }
+}
